@@ -43,22 +43,31 @@ https://georgeweblog.com/200512css-layout/
 12、LP などでヘッダーナビゲーションからスクロールを緩やかにする方法
 https://pengi-n.co.jp/column/design/css-scroll-behavior/
 
+13、メニューのホバー時のアンダーラインや背景のアニメーションを単純な border-bottom にしない
+
 <!-- 番外編 -->
 
-12、カーソルポインターみたいなのを実装するには？
+14、カーソルポインターみたいなのを実装するには？
 https://wemo.tech/3229
 ↓ こっちの方がわかりやすいかも
 https://web-den.com/change-cursor
 
-13、クリックで画像拡大は？
+15、クリックで画像拡大は？
 
-14、クッキーを実装するには？
+16、クッキーを実装するには？
 css:
 https://fuuno.net/web02/click_zoom/click_zoom.html
 jQuery:
 https://renkosaka.com/modal-window-image/
 https://zenn.dev/suguru_3u/articles/baab0e978a146f
 https://itblogger-note.blogspot.com/2021/06/cookie-consent-popup.html
+
+17、グラデーションジェネレーター
+https://www.sejuku.net/blog/53162
+https://cssgradient.io/
+
+18、スリガラス CSS
+https://webspe.net/tools/glass/
 
 <!--複数サイトを見た結果  -->
 
