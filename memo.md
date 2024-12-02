@@ -39,6 +39,12 @@ https://aqua-programdiary.com/javascript-3/
 11、画像が重なっていて強調されている感じ
 https://georgeweblog.com/200512css-layout/
 
+<!-- 番外編 -->
+
+12、クッキーを実装するには？
+https://zenn.dev/suguru_3u/articles/baab0e978a146f
+https://itblogger-note.blogspot.com/2021/06/cookie-consent-popup.html
+
 memo
 CSS だけで画像切り替え
 １、 これが一番使える
@@ -50,3 +56,32 @@ https://zenn.dev/ohtasoji/articles/16b7391074bcdb
 //////////// -->
 
 基本的に ID でアニメーション実装するより細かく class つけてやったほうが扱いやすい
+
+<!--  w-rapperの使い方と綺麗なフロントを作る小技
+//////////////////////////////////////// -->
+
+https://www.urban-project.jp/blog/recommended/1862/
+
+WEB サイト制作には Wrapper の概念を意識する必要がある
+コンテンツは特段の理由がない限り Wrapper の中に収める
+Wrapper を守ると単調なサイトしか作れないは誤り
+Wrapper を無視する際は「なぜそれが必要なのか」を自分に問いかける
+
+<!--  containerの概念
+//////////////////////////////// -->
+
+<!--  CSSの命名規則や小技
+///////////////////////////////// -->
+
+https://qiita.com/manabuyasuda/items/dbb76ed36970bec95470
+
+<!--
+//////////////////////// -->
+
+会社情報
+
+サービス
+
+リクルート
+
+お問い合わせ
