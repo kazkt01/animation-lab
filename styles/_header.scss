@@ -35,5 +35,21 @@
   }
 }
 
+// レスポンシブ対応
+// 2560pxでスライドが見切れてしまっている。
+// 1024pxでaboutのテキストが見切れている。、surviceの部分も狭そう　supportもデカすぎる　contact 狭すぎ
+//
+
+// タブレット
+@media screen and (max-width: 768px) {
+  .h-nav {
+    display: none;
+  }
+}
+
+// スマホ L
+@media screen and (max-width: 425px) {
+}
+
 // Sp-humberger
 ///////////////////////////

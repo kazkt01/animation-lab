@@ -40,6 +40,9 @@ https://aqua-programdiary.com/javascript-3/
 11、画像が重なっていて強調されている感じ
 https://georgeweblog.com/200512css-layout/
 
+12、LP などでヘッダーナビゲーションからスクロールを緩やかにする方法
+https://pengi-n.co.jp/column/design/css-scroll-behavior/
+
 <!-- 番外編 -->
 
 12、カーソルポインターみたいなのを実装するには？

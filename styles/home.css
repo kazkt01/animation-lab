@@ -34,6 +34,11 @@
   border-bottom: 1px solid #333;
 }
 
+@media screen and (max-width: 768px) {
+  .h-nav {
+    display: none;
+  }
+}
 /* 複数画像切り替え---------------------------------------------- */
 .slider-container {
   position: relative;
@@ -249,12 +254,6 @@ footer {
   margin-top: 0;
 }
 
-.c-btn {
-  background: #000;
-  border: 1px solid #fff;
-  color: #fff;
-}
-
 .slide {
   align-items: center;
   display: flex;
@@ -290,12 +289,16 @@ footer {
     transform: translateX(-100%);
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
 .l-wrapper {
   overflow: hidden;
 }
 
 .l-inner-wrppaer {
-  margin: 0 140px;
+  margin: 0 10%;
   overflow: hidden;
 }
 
@@ -307,6 +310,7 @@ section {
   text-align: center;
   margin-bottom: 50px;
   padding-top: 50px;
+  margin-top: 0;
 }
 
 .bg-video {
