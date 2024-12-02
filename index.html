@@ -30,7 +30,7 @@
       <!-- ーーーーーーーーーーーーーーメイン----------------------------------------- -->
       <main class="main">
         <!-- visual -->
-        <div class="slider-container">
+        <div id="mainvisual" class="slider-container">
           <div class="slideimg"></div>
           <div class="slideimg"></div>
           <div class="slideimg"></div>
@@ -40,29 +40,17 @@
         <!-- -------------------------------------- -->
 
         <!-------------------- About ------------------------------>
+        <!-- 左右逆転しているのをなおそう -->
         <section id="about">
-          <h2 class="section-title">ABOUT</h2>
+          <h2 id="title_1" class="section-title">ABOUT</h2>
           <div class="l-inner-wrppaer">
-            <div class="a-box-left">
+            <div id="slide-left_1" class="a-box-left">
               <img class="a-img" src="./assets/img/maiko.jpg" alt="" />
               <div>
-                <h3 class="a-title">私たちは、日本の旅行を変える</h3>
-                samplesamplesamplefeoijfoaiejfoieajoieajoijsaijdoaijs <br />
-                saiodjwidoaijdoissadoiejfoaiejoidjoiajdiadjoviddijo <br />
-                samplesamplesamplefeoijfoaiejfoieajoieajoijsaijdoaijs <br />
-                saiodjwidoaijdoissadoiejfoaiejoidjoiajdiadjoviddijo <br />
-                samplesamplesamplefeoijfoaiejfoieajoieajoijsaijdoaijs <br />
-                saiodjwidoaijdoissadoiejfoaiejoidjoiajdiadjoviddijo <br />
-                samplesamplesamplefeoijfoaiejfoieajoieajoijsaijdoaijs <br />
-                saiodjwidoaijdoissadoiejfoaiejoidjoiajdiadjoviddijo <br />
-              </div>
-            </div>
-
-            <div class="a-box-right">
-              <img class="a-img" src="./assets/img/fukei.jpg" alt="" />
-              <div>
-                <h3 class="a-title">もっと自由に、もっと気軽に</h3>
-                <p class="a-p">
+                <h3 id="a-h3_1" class="a-title">
+                  私たちは、日本の旅行を変える
+                </h3>
+                <p id="a-p_1" class="a-p">
                   samplesamplesamplefeoijfoaiejfoieajoieajoijsaijdoaijs <br />
                   saiodjwidoaijdoissadoiejfoaiejoidjoiajdiadjoviddijo <br />
                   samplesamplesamplefeoijfoaiejfoieajoieajoijsaijdoaijs <br />
@@ -75,24 +63,43 @@
               </div>
             </div>
 
-            <div class="a-box-left">
+            <div id="slide-right_2" class="a-box-right">
+              <img class="a-img" src="./assets/img/fukei.jpg" alt="" />
+              <div>
+                <h3 id="a-h3_2" class="a-title">もっと自由に、もっと気軽に</h3>
+                <p id="a-p_2" class="a-p">
+                  samplesamplesamplefeoijfoaiejfoieajoieajoijsaijdoaijs <br />
+                  saiodjwidoaijdoissadoiejfoaiejoidjoiajdiadjoviddijo <br />
+                  samplesamplesamplefeoijfoaiejfoieajoieajoijsaijdoaijs <br />
+                  saiodjwidoaijdoissadoiejfoaiejoidjoiajdiadjoviddijo <br />
+                  samplesamplesamplefeoijfoaiejfoieajoieajoijsaijdoaijs <br />
+                  saiodjwidoaijdoissadoiejfoaiejoidjoiajdiadjoviddijo <br />
+                  samplesamplesamplefeoijfoaiejfoieajoieajoijsaijdoaijs <br />
+                  saiodjwidoaijdoissadoiejfoaiejoidjoiajdiadjoviddijo <br />
+                </p>
+              </div>
+            </div>
+
+            <div id="slide-left_3" class="a-box-left">
               <img class="a-img" src="./assets/img/torii.jpg" alt="" />
               <div>
-                <h3 class="a-title">最高の体験へ</h3>
-                samplesamplesamplefeoijfoaiejfoieajoieajoijsaijdoaijs <br />
-                saiodjwidoaijdoissadoiejfoaiejoidjoiajdiadjoviddijo <br />
-                samplesamplesamplefeoijfoaiejfoieajoieajoijsaijdoaijs <br />
-                saiodjwidoaijdoissadoiejfoaiejoidjoiajdiadjoviddijo <br />
-                samplesamplesamplefeoijfoaiejfoieajoieajoijsaijdoaijs <br />
-                saiodjwidoaijdoissadoiejfoaiejoidjoiajdiadjoviddijo <br />
-                samplesamplesamplefeoijfoaiejfoieajoieajoijsaijdoaijs <br />
-                saiodjwidoaijdoissadoiejfoaiejoidjoiajdiadjoviddijo <br />
+                <h3 id="a-h3_3" class="a-title">最高の体験へ</h3>
+                <p id="a-p_3" class="a-p">
+                  samplesamplesamplefeoijfoaiejfoieajoieajoijsaijdoaijs <br />
+                  saiodjwidoaijdoissadoiejfoaiejoidjoiajdiadjoviddijo <br />
+                  samplesamplesamplefeoijfoaiejfoieajoieajoijsaijdoaijs <br />
+                  saiodjwidoaijdoissadoiejfoaiejoidjoiajdiadjoviddijo <br />
+                  samplesamplesamplefeoijfoaiejfoieajoieajoijsaijdoaijs <br />
+                  saiodjwidoaijdoissadoiejfoaiejoidjoiajdiadjoviddijo <br />
+                  samplesamplesamplefeoijfoaiejfoieajoieajoijsaijdoaijs <br />
+                  saiodjwidoaijdoissadoiejfoaiejoidjoiajdiadjoviddijo <br />
+                </p>
               </div>
             </div>
           </div>
           <!-- ----------------------------------------------- -->
 
-          <div class="slide">
+          <div id="slide_1" class="slide">
             <ul>
               <li><img src="./assets/img/fuji.jpg" alt="" /></li>
               <li><img src="./assets/img/fukei.jpg" alt="" /></li>
@@ -119,18 +126,19 @@
 
         <!-- ーーーーーーーーーーーーーーーーーサービスーーーーーーーーーーーーーーーーーーー -->
         <section id="service">
-          <h2 class="section-title">SERVICE</h2>
+          <h2 id="title_2" class="section-title">SERVICE</h2>
           <div class="l-inner-wrppaer">
             <div class="s-box">
               <div class="s-inner-box">
                 <img
+                  id="s-1"
                   class="s-img"
                   width="100px"
                   src="./assets/img/ryokou.png"
                   alt=""
                 />
-                <h3>スマホ予約</h3>
-                <p>
+                <h3 id="s-1-h3">スマホ予約</h3>
+                <p id="s-1-p">
                   っぱいあるしこれからvieitcontrols土井 <br />
                   一輝阿舒家jiっぱいあるしこれからそいitc <br />
                   ontrols度合いji度合いj <br />
@@ -139,13 +147,14 @@
 
               <div class="s-inner-box">
                 <img
+                  id="s-2"
                   class="s-img"
                   width="200px"
                   src="./assets/img/kaigi.png"
                   alt=""
                 />
-                <h3>計画提案</h3>
-                <p>
+                <h3 id="s-2-h3">計画提案</h3>
+                <p id="s-2-p">
                   っぱいあるしこれからvieitcontrols土井 <br />
                   一輝阿舒家jiっぱいあるしこれからそいitc <br />
                   ontrols度合いji度合いj <br />
@@ -154,13 +163,14 @@
 
               <div class="s-inner-box">
                 <img
+                  id="s-3"
                   class="s-img"
                   width="240px"
                   src="./assets/img/pc.png"
                   alt=""
                 />
-                <h3>スケジュール確認</h3>
-                <p>
+                <h3 id="s-3-h3">スケジュール確認</h3>
+                <p id="s-3-p">
                   っぱいあるしこれからvieitcontrols土井 <br />
                   一輝阿舒家jiっぱいあるしこれからそいitc <br />
                   ontrols度合いji度合いj <br />
@@ -173,36 +183,36 @@
         <!-- ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
 
         <section id="news">
-          <h2 class="section-title">NEWS</h2>
+          <h2 id="title_3" class="section-title">NEWS</h2>
           <div class="l-inner-wrppaer">
             <dl>
-              <dt>2020.XX.XX</dt>
-              <dd>
+              <dt id="n-dt_1">2024.XX.XX</dt>
+              <dd id="n-dd_2">
                 デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。
               </dd>
-              <dt>2020.XX.XX</dt>
-              <dd>
+              <dt id="n-dt_2">2024.XX.XX</dt>
+              <dd id="n-dd_2">
                 ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。
               </dd>
-              <dt>2019.XX.XX</dt>
-              <dd>
+              <dt id="n-dt_3">2024.XX.XX</dt>
+              <dd id="n-dd_3">
                 【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト
               </dd>
-              <dt>2019.XX.XX</dt>
-              <dd>
+              <dt id="n-dt_4">2024.XX.XX</dt>
+              <dd id="n-dd_4">
                 デザイン雑誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。
               </dd>
-              <dt>2019.XX.XX</dt>
-              <dd>
+              <dt id="n-dt_5">2024.XX.XX</dt>
+              <dd id="n-dd_5">
                 【個展開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト
               </dd>
             </dl>
           </div>
         </section>
 
-        <section id="cliant">
-          <h2 class="section-title">CLIANT</h2>
-          <div class="bbs">
+        <section id="support">
+          <h2 id="title_4" class="section-title">SUPPORT</h2>
+          <div id="slide_2" class="bbs">
             <ul>
               <li><img src="./assets/svg/Blue Everest.svg" alt="" /></li>
               <li><img src="./assets/svg/Calypso.svg" alt="" /></li>
@@ -228,16 +238,19 @@
 
         <!-- 幅広系の -->
         <section id="contact">
-          <h2 class="section-title">CONTACT</h2>
+          <h2 id="title_5" class="section-title">CONTACT</h2>
           <div class="c-container">
-            <div class="c-inner-box">
+            <div id="c-box_1" class="c-inner-box_A">
               <ul class="c-ul-txt">
-                <li class="c-li-txt">weidjoaeidjaoisjdoasijdoaisjdoai</li>
-                <li class="c-li-txt">weidjoaeidjaoisjdoasijdoaisjdoai</li>
-                <li class="c-li-txt">weidjoaeidjaoisjdoasijdoaisjdoai</li>
+                <li class="c-li-txt">〒100-0005</li>
+                <li class="c-li-txt">東京都千代田区丸の内１丁目</li>
+                <li class="c-li-txt">平日:9:00〜18:00</li>
+                <li class="c-li-txt">土日:9:00〜15:00</li>
+                <li class="c-li-txt">Tel:000-0000-0000</li>
               </ul>
             </div>
-            <div class="c-inner-box">
+
+            <div id="c-box_2" class="c-inner-box_B">
               <form class="c-from" action="#" method="post">
                 <dl class="c-ul">
                   <dt><label for="name">NAME</label></dt>
@@ -261,26 +274,24 @@
                   <dt><label for="message">MESSAGE</label></dt>
                   <dd class="c-dd">
                     <textarea
-                      class="c-input"
+                      class="c-text-area"
                       id="message"
                       name="your-message"
                     ></textarea>
                   </dd>
                 </dl>
                 <div class="button">
-                  <input class="c-btn" type="submit" value="送信" />
+                  <input class="c-btn" type="submit" value="SEND" />
                 </div>
               </form>
             </div>
           </div>
         </section>
-
-        <!-- l-inner-wrapper END  -->
       </main>
       <!--  footer
 ------------------------------------ -->
       <footer>
-        <small>©2024 demo site</small>
+        <small id="copy">©2024 demo site</small>
       </footer>
     </div>
     <!-- l-wrapper　END -->
@@ -290,41 +301,231 @@
       ScrollReveal({
         reset: true,
         distance: "60px",
-        duration: 2000,
+      });
+
+      ScrollReveal().reveal("#mainvisual", {
+        origin: "bottom",
+        duration: 1000,
         delay: 200,
       });
-      ///////////////////////////////////
-      ScrollReveal().reveal(".slider-container", {
-        delay: 100,
-        reset: false,
-        distance: "10px",
+
+      //  About
+      ////////////////////////////////////////
+      ScrollReveal().reveal("#slide-left_1", {
+        origin: "right",
+        duration: 800,
+        delay: 300,
       });
-      ScrollReveal().reveal(".site-logo", {
-        delay: 600,
-        reset: false,
-        distance: "10px",
+      ScrollReveal().reveal("#a-h3_1", {
+        origin: "right",
+        duration: 800,
+        delay: 320,
       });
-      ScrollReveal().reveal(".h-li", {
-        delay: 600,
-        reset: false,
-        distance: "20px",
-        opacity: 0,
+      ScrollReveal().reveal("#a-p_1", {
+        origin: "right",
+        duration: 800,
+        delay: 330,
       });
 
-      ScrollReveal().reveal("section", {
-        delay: 600,
-        reset: false,
-        distance: "20px",
-        opacity: 0,
-      });
-
-      // ////////////
-      ScrollReveal().reveal(".a-img", {
-        delay: 2000,
+      ScrollReveal().reveal("#slide-right_2", {
         origin: "left",
-        distance: 200,
-        opacity: 0,
+        duration: 800,
+        delay: 400,
       });
+      ScrollReveal().reveal("#a-h3_2", {
+        origin: "left",
+        duration: 800,
+        delay: 410,
+      });
+      ScrollReveal().reveal("#a-p_2", {
+        origin: "left",
+        duration: 800,
+        delay: 420,
+      });
+
+      ScrollReveal().reveal("#slide-left_3", {
+        origin: "right",
+        duration: 800,
+        delay: 500,
+      });
+
+      ScrollReveal().reveal("#a-h3_3", {
+        origin: "right",
+        duration: 800,
+        delay: 510,
+      });
+      ScrollReveal().reveal("#a-p_3", {
+        origin: "right",
+        duration: 800,
+        delay: 520,
+      });
+      //スライド
+      //////////////////
+      ScrollReveal().reveal("#slide_1", {
+        origin: "bottom",
+        duration: 1000,
+        delay: 600,
+      });
+      ScrollReveal().reveal("#slide_2", {
+        origin: "bottom",
+        duration: 1000,
+        delay: 1600,
+      });
+
+      // サービス
+      ///////////////////////////////////
+
+      ScrollReveal().reveal("#s-1", {
+        origin: "bottom",
+        duration: 1000,
+        delay: 200,
+      });
+      ScrollReveal().reveal("#s-1-h3", {
+        origin: "bottom",
+        duration: 1000,
+        delay: 300,
+      });
+      ScrollReveal().reveal("#s-1-p", {
+        origin: "bottom",
+        duration: 1000,
+        delay: 400,
+      });
+
+      ScrollReveal().reveal("#s-2", {
+        origin: "bottom",
+        duration: 1000,
+        delay: 400,
+      });
+
+      ScrollReveal().reveal("#s-2-h3", {
+        origin: "bottom",
+        duration: 1000,
+        delay: 400,
+      });
+      ScrollReveal().reveal("#s-2-p", {
+        origin: "bottom",
+        duration: 1000,
+        delay: 500,
+      });
+
+      ScrollReveal().reveal("#s-3", {
+        origin: "bottom",
+        duration: 1000,
+        delay: 600,
+      });
+      ScrollReveal().reveal("#s-3-h3", {
+        origin: "bottom",
+        duration: 1000,
+        delay: 500,
+      });
+      ScrollReveal().reveal("#s-3-p", {
+        origin: "bottom",
+        duration: 1000,
+        delay: 600,
+      });
+
+      //  ニュース
+      ////////////////////////////
+
+      ScrollReveal().reveal("#n-dt_1", {
+        origin: "bottom",
+        duration: 1000,
+        delay: 600,
+      });
+      ScrollReveal().reveal("#n-dd_1", {
+        origin: "bottom",
+        duration: 1000,
+        delay: 700,
+      });
+
+      ScrollReveal().reveal("#n-dt_2", {
+        origin: "bottom",
+        duration: 1000,
+        delay: 800,
+      });
+      ScrollReveal().reveal("#n-dd_2", {
+        origin: "bottom",
+        duration: 1000,
+        delay: 900,
+      });
+      ScrollReveal().reveal("#n-dt_3", {
+        origin: "bottom",
+        duration: 1000,
+        delay: 1000,
+      });
+      ScrollReveal().reveal("#n-dd_3", {
+        origin: "bottom",
+        duration: 1000,
+        delay: 1100,
+      });
+      ScrollReveal().reveal("#n-dt_4", {
+        origin: "bottom",
+        duration: 1000,
+        delay: 1200,
+      });
+      ScrollReveal().reveal("#n-dd_4", {
+        origin: "bottom",
+        duration: 1000,
+        delay: 1300,
+      });
+      ScrollReveal().reveal("#n-dt_5", {
+        origin: "bottom",
+        duration: 1000,
+        delay: 1500,
+      });
+      ScrollReveal().reveal("#n-dd_5", {
+        origin: "bottom",
+        duration: 1000,
+        delay: 1600,
+      });
+
+      // お問い合わせ
+      //////////////////////
+
+      ScrollReveal().reveal("#c-box_1", {
+        origin: "bottom",
+        duration: 1000,
+        delay: 1300,
+      });
+      ScrollReveal().reveal("#c-box_2", {
+        origin: "bottom",
+        duration: 1000,
+        delay: 1500,
+      });
+
+      //  section title
+      ///////////////////////////
+      ScrollReveal().reveal("#title_1", {
+        origin: "bottom",
+        duration: 1000,
+        delay: 600,
+      });
+      ScrollReveal().reveal("#title_2", {
+        origin: "bottom",
+        duration: 1000,
+        delay: 800,
+      });
+      ScrollReveal().reveal("#title_3", {
+        origin: "bottom",
+        duration: 1000,
+        delay: 1000,
+      });
+
+      ScrollReveal().reveal("#title_4", {
+        origin: "bottom",
+        duration: 1000,
+        delay: 1200,
+      });
+      ScrollReveal().reveal("#title_5", {
+        origin: "bottom",
+        duration: 1000,
+        delay: 1400,
+      });
+      // ScrollReveal().reveal("#copy", {
+      //   origin: "bottom",
+      //   duration: 1000,
+      //   delay: 1000,
+      // });
     </script>
   </body>
 </html>

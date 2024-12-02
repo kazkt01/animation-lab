@@ -8,7 +8,6 @@
   left: 0;
   width: 100%;
   z-index: 100;
-  background: #fff;
 }
 
 .site-logo {
@@ -40,6 +39,7 @@
   position: relative;
   width: 100%;
   height: 800px;
+  margin-top: 160px;
   overflow: hidden;
 }
 
@@ -116,7 +116,7 @@
 }
 
 .bbs ul {
-  animation: flowing-right 50s linear infinite;
+  animation: flowing-left 50s linear infinite;
   font-size: 20px;
   transform: translateX(100%);
   margin: 0;
@@ -128,6 +128,10 @@
   padding-right: 10px;
 }
 
+.bbs ul li img {
+  width: 400px;
+}
+
 @keyframes flowing-right {
   0% {
     transform: translateX(-100%);
@@ -136,57 +140,26 @@
     transform: translateX(0);
   }
 }
-.bbs2 {
-  align-items: center;
-  color: #e20000;
-  display: flex;
-  overflow: hidden;
-  width: 100%;
-  white-space: nowrap;
-}
-
-.bbs2 ul {
-  animation: flowing-left 50s linear infinite;
-  font-size: 20px;
-  transform: translateX(100%);
-  margin: 0;
-  padding: 0;
-}
-
-.bbs2 ul li {
-  display: inline-block;
-  padding-right: 10px;
-}
-
-@keyframes flowing-left {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
 #contact {
   background: #000;
   color: white;
   width: 100%;
+  height: 600px;
 }
 
 .c-container {
-  width: 1005;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin: 0 10%;
+  margin: 0 15%;
+}
+
+.c-inner-box_A {
+  margin-left: 150px;
 }
 
 .c-ul-txt {
   list-style: none;
-}
-
-form {
-  width: 400px;
-  margin-left: 40px;
+  padding: 0;
 }
 
 .c-txt-box {
@@ -200,6 +173,18 @@ form {
 
 .c-input {
   width: 400px;
+  height: 20px;
+  background: #fff;
+  border: none;
+  border-radius: 2px;
+  margin: 0 0 10px 0;
+}
+
+.c-text-area {
+  margin: 0 0 10px 0;
+  border-radius: 2px;
+  width: 400px;
+  height: 90px;
   background: #fff;
   border: none;
 }
@@ -208,10 +193,28 @@ form {
   margin: 0;
 }
 
+.c-btn {
+  background: #000;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 2px;
+  padding: 10px 50px;
+  transition: all 1s;
+}
+.c-btn:hover {
+  background: white;
+  color: black;
+  border: 1px solid #333;
+}
+
 footer {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: white;
   color: #333;
+  width: 100%;
+  height: 20px;
 }
 
 .a-box-left {
@@ -246,6 +249,12 @@ footer {
   margin-top: 0;
 }
 
+.c-btn {
+  background: #000;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
 .slide {
   align-items: center;
   display: flex;
@@ -256,7 +265,7 @@ footer {
 }
 
 .slide ul {
-  animation: flowing-left 50s linear infinite;
+  animation: flowing-right 50s linear infinite;
   font-size: 20px;
   transform: translateX(100%);
   margin: 0;
@@ -281,6 +290,10 @@ footer {
     transform: translateX(-100%);
   }
 }
+.l-wrapper {
+  overflow: hidden;
+}
+
 .l-inner-wrppaer {
   margin: 0 140px;
   overflow: hidden;

@@ -2,23 +2,23 @@
   background: #000;
   color: white;
   width: 100%;
+  height: 600px;
 }
 
 .c-container {
-  width: 1005;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin: 0 10%;
+
+  margin: 0 15%;
+}
+
+.c-inner-box_A {
+  margin-left: 150px;
 }
 
 .c-ul-txt {
   list-style: none;
-}
-
-form {
-  width: 400px;
-  margin-left: 40px;
+  padding: 0;
 }
 
 .c-txt-box {
@@ -32,11 +32,37 @@ form {
 
 .c-input {
   width: 400px;
+  height: 20px;
   background: #fff;
+  border: none;
+  border-radius: 2px;
+  margin: 0 0 10px 0;
+}
 
+.c-text-area {
+  margin: 0 0 10px 0;
+  border-radius: 2px;
+  width: 400px;
+  height: 90px;
+  background: #fff;
   border: none;
 }
 
 .c-dd {
   margin: 0;
+}
+
+.c-btn {
+  background: #000;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 2px;
+  padding: 10px 50px;
+  transition: all 1s;
+
+  &:hover {
+    background: white;
+    color: black;
+    border: 1px solid #333;
+  }
 }
