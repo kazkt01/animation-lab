@@ -95,11 +95,11 @@
 
 .bbs {
   align-items: center;
-  color: #e20000;
   display: flex;
   overflow: hidden;
   width: 100%;
   white-space: nowrap;
+  padding: 0 30px;
 }
 
 .bbs ul {
@@ -162,6 +162,10 @@
 .container {
   display: flex;
   justify-content: space-between;
+}
+
+form {
+  width: 400px;
 }
 
 footer {
@@ -239,12 +243,13 @@ footer {
 }
 section {
   background: white;
-  padding: 200px;
+  padding: 0 200px;
 }
 
 .section-title {
   text-align: center;
   margin-bottom: 50px;
+  padding-top: 50px;
 }
 
 .bg-video {
@@ -267,4 +272,6 @@ section {
 
 .s-img {
   margin: 20px;
+  height: 178px;
+  overflow: hidden;
 }/*# sourceMappingURL=home.css.map */

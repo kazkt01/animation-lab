@@ -11,12 +11,13 @@
 
 section {
   background: #ffff;
-  padding: 200px;
+  padding: 0 200px;
 }
 
 .section-title {
   text-align: center;
   margin-bottom: 50px;
+  padding-top: 50px;
 }
 
 .bg-video {
@@ -39,4 +40,6 @@ section {
 
 .s-img {
   margin: 20px;
+  height: 178px;
+  overflow: hidden;
 }

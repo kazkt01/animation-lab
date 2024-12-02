@@ -2,11 +2,11 @@
 .bbs {
   align-items: center;
   //   color: #000000;
-  color: #e20000;
   display: flex;
   overflow: hidden;
   width: 100%;
   white-space: nowrap;
+  padding: 0 30px;
 }
 .bbs ul {
   animation: flowing-right 50s linear infinite;
