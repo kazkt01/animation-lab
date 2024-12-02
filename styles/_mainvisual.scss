@@ -1,0 +1,129 @@
+//............mainvisual....................
+// #mainvisual img {
+//   width: 100%;
+//   height: 500px;
+//   object-fit: cover;
+// }
+
+// .container {
+//   height: 300px;
+//   width: 300px;
+//   position: relative;
+// }
+
+// .image {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   bottom: 0;
+//   right: 0;
+//   opacity: 0;
+//   background-size: cover;
+//   background-position: center center;
+
+//   animation: image-switch-animation 25s infinite;
+// }
+
+// .src1 {
+//   background-image: url("../assets/img/fuji.jpg");
+// }
+// .src2 {
+//   background-image: url("../assets/img/maiko.jpg");
+// }
+// .src3 {
+//   background-image: url("../assets/img/torii.jpg");
+// }
+
+// @keyframes image-switch-animation {
+//   0% {
+//     opacity: 0;
+//   }
+//   5% {
+//     opacity: 1;
+//   }
+//   25% {
+//     opacity: 1;
+//   }
+//   30% {
+//     opacity: 0;
+//   }
+//   100% {
+//     opacity: 0;
+//   }
+// }
+// .image:nth-of-type(1) {
+//   animation-delay: 0s;
+// }
+// .image:nth-of-type(2) {
+//   animation-delay: 5s;
+// }
+// .image:nth-of-type(3) {
+//   animation-delay: 10s;
+// }
+// .image:nth-of-type(4) {
+//   animation-delay: 15s;
+// }
+// .image:nth-of-type(5) {
+//   animation-delay: 20s;
+// }
+
+/* 複数画像切り替え---------------------------------------------- */
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  margin-top: 100px;
+}
+
+.slideimg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-size: cover; /* 画像をスライド全体にカバー */
+  animation: slideAnime 15s infinite; /* 15秒で1サイクル */
+}
+
+@keyframes slideAnime {
+  0%,
+  30%,
+  100% {
+    opacity: 0;
+  } /* スライドの非表示タイミング */
+  10%,
+  20% {
+    opacity: 1;
+  } /* スライドの表示タイミング */
+}
+
+/* 各スライドのアニメーションタイミングを均等にずらす */
+.slideimg:nth-of-type(1) {
+  background-image: url("../assets/img/fuji.jpg");
+  animation-delay: 0s;
+  background-position: 100%;
+}
+
+.slideimg:nth-of-type(2) {
+  background-image: url("../assets/img/maiko.jpg");
+  animation-delay: 3s;
+  background-position: 10%;
+}
+
+.slideimg:nth-of-type(3) {
+  background-image: url("../assets/img/torii.jpg");
+  animation-delay: 6s;
+  background-position: 0%;
+}
+.slideimg:nth-of-type(4) {
+  background-image: url("../assets/img/fukei.jpg");
+  animation-delay: 6s;
+  background-position: 0%;
+}
+.slideimg:nth-of-type(5) {
+  background-image: url("../assets/img/akari.jpg");
+  animation-delay: 6s;
+  background-position: 0%;
+}

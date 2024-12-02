@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="./assets/img/favicon.png" />
+
+    <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/home.css" />
+  </head>
+  <body>
+    <!--  header
+    ------------------------------------------ -->
+
+    <header id="header">
+      <h1 class="site-logo">
+        <a href=""><img src="./assets/img/logo.svg" alt="" /></a>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="">ABOUT</a></li>
+          <li><a href="">SERVICE</a></li>
+          <li><a href="">NEWS</a></li>
+          <li><a href="">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--  main
+    ----------------------------------------- -->
+    <main>
+    <div class="slider-container">
+        <div class="slideimg"></div>
+        <div class="slideimg"></div>
+        <div class="slideimg"></div>
+        <div class="slideimg"></div>
+        <div class="slideimg"></div>
+    </div>
+
+ 
+
+
+
+
+  <section id="about">
+    <h2 class="section-title">ABOUT</h2>
+
+    <img
+    class="a-img"
+    width="400px"
+     src="./assets/img/akari.jpg" alt="">
+
+
+  </section>
+<section id="service">
+  <h2 class="section-title">SERVICE</h2>
+</section>
+<section id="news">
+  <h2 class="section-title">NEWS</h2>
+</section>
+
+
+   
+ <section id="animation">
+    <h2 class="section-title">ANIAMTION</h2>
+        <div class="bbs">
+        <ul>
+          <li>2022.04.23 NEW OPEN!</li>
+          <li>2022.04.23 NEW OPEN!</li>
+          <li>2022.04.23 NEW OPEN!</li>
+          <li>2022.04.23 NEW OPEN!</li>
+          <li>2022.04.23 NEW OPEN!</li>
+          <li>2022.04.23 NEW OPEN!</li>
+          <li>2022.04.23 NEW OPEN!</li>
+          <li>2022.04.23 NEW OPEN!</li>
+        </ul>
+        <ul>
+          <li>2022.04.23 NEW OPEN!</li>
+          <li>2022.04.23 NEW OPEN!</li>
+          <li>2022.04.23 NEW OPEN!</li>
+          <li>2022.04.23 NEW OPEN!</li>
+          <li>2022.04.23 NEW OPEN!</li>
+          <li>2022.04.23 NEW OPEN!</li>
+          <li>2022.04.23 NEW OPEN!</li>
+          <li>2022.04.23 NEW OPEN!</li>
+        </ul>
+      </div>
+   </section>
+
+<!-- 幅広系の -->
+<section id="contact">
+  <h2 class="section-title">CONTACT</h2>
+<div class="container">
+  <ul>
+    <li>weidjoaeidjaoisjdoasijdoaisjdoai</li>
+  <li>weidjoaeidjaoisjdoasijdoaisjdoai</li>
+<li>weidjoaeidjaoisjdoasijdoaisjdoai</li>
+</ul>
+</div>
+<form action="#" method="post">
+  <dl>
+    <dt><label for="name">NAME</label></dt>
+  <dd><input type="text" id="name" name="your-name" /></dd>
+<dt><label for="email">E-mail</label></dt>
+<dd><input type="email" id="email" name="your-email" /></dd>
+
+<dt><label for="message" >MESSAGE</label></dt>
+
+<dd><textarea id="message" name="your-message" ></textarea></dd>
+</dl>
+<div class="button">
+  <input type="submit" value="送信" ></input>
+</div>
+</form>
+
+</section>
+
+
+
+</main>
+<!--  footer
+------------------------------------ -->
+
+    <footer>
+      <small>©2024 demo site</small>
+    </footer>
+
+    <!-- Scroll Reveal  スクロールふわっと実装-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal({
+        reset: true,
+        distance: "60px",
+        duration: 2000,
+        delay: 200,
+      });
+      ///////////////////////////////////
+            ScrollReveal().reveal(".slider-container", { delay: 100 , reset:false , distance:'10px' });
+            ScrollReveal().reveal(".site-logo", { delay: 300 , reset:false , distance:'10px' });
+            ScrollReveal().reveal("#about", { delay: 600 , distance:'20px' ,  opacity:0 });
+            ScrollReveal().reveal("#service", { delay: 900 , distance:'20px' ,  opacity:0 });
+            ScrollReveal().reveal("#news", { delay: 1000 , distance:'20px' ,  opacity:0 });
+            ScrollReveal().reveal("#animation", { delay: 1100 , distance:'20px' ,  opacity:0 });
+            ScrollReveal().reveal("#contact", { delay: 1200 , distance:'20px' ,  opacity:0 });
+    </script>
+  </body>
+</html>
