@@ -28,7 +28,7 @@
       </header>
 
       <!-- ーーーーーーーーーーーーーーメイン----------------------------------------- -->
-      <main>
+      <main class="main">
         <!-- visual -->
         <div class="slider-container">
           <div class="slideimg"></div>
@@ -229,28 +229,49 @@
         <!-- 幅広系の -->
         <section id="contact">
           <h2 class="section-title">CONTACT</h2>
-          <div class="container">
-            <ul class="c-txt-box">
-              <li class="c-txt-li">weidjoaeidjaoisjdoasijdoaisjdoai</li>
-              <li class="c-txt-li">weidjoaeidjaoisjdoasijdoaisjdoai</li>
-              <li class="c-txt-li">weidjoaeidjaoisjdoasijdoaisjdoai</li>
-            </ul>
-
-            <form action="#" method="post">
-              <dl>
-                <dt><label for="name">NAME</label></dt>
-                <dd><input type="text" id="name" name="your-name" /></dd>
-                <dt><label for="email">E-mail</label></dt>
-                <dd><input type="email" id="email" name="your-email" /></dd>
-                <dt><label for="message">MESSAGE</label></dt>
-                <dd>
-                  <textarea id="message" name="your-message"></textarea>
-                </dd>
-              </dl>
-              <div class="button">
-                <input type="submit" value="送信" />
-              </div>
-            </form>
+          <div class="c-container">
+            <div class="c-inner-box">
+              <ul class="c-ul-txt">
+                <li class="c-li-txt">weidjoaeidjaoisjdoasijdoaisjdoai</li>
+                <li class="c-li-txt">weidjoaeidjaoisjdoasijdoaisjdoai</li>
+                <li class="c-li-txt">weidjoaeidjaoisjdoasijdoaisjdoai</li>
+              </ul>
+            </div>
+            <div class="c-inner-box">
+              <form class="c-from" action="#" method="post">
+                <dl class="c-ul">
+                  <dt><label for="name">NAME</label></dt>
+                  <dd class="c-dd">
+                    <input
+                      class="c-input"
+                      type="text"
+                      id="name"
+                      name="your-name"
+                    />
+                  </dd>
+                  <dt><label for="email">E-mail</label></dt>
+                  <dd class="c-dd">
+                    <input
+                      class="c-input"
+                      type="email"
+                      id="email"
+                      name="your-email"
+                    />
+                  </dd>
+                  <dt><label for="message">MESSAGE</label></dt>
+                  <dd class="c-dd">
+                    <textarea
+                      class="c-input"
+                      id="message"
+                      name="your-message"
+                    ></textarea>
+                  </dd>
+                </dl>
+                <div class="button">
+                  <input class="c-btn" type="submit" value="送信" />
+                </div>
+              </form>
+            </div>
           </div>
         </section>
 

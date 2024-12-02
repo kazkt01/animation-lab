@@ -28,3 +28,48 @@ https://81-web.com/sites/38151
 
 ４、humberger 　 sp-menu いい感じ みやすさもベスト
 https://rprojectjapan.com/
+
+// 修正案
+@keyframes slideAnime {
+0% {
+opacity: 0;
+}
+4% {
+opacity: 1;
+}
+20% {
+opacity: 1;
+}
+24% {
+opacity: 0;
+}
+100% {
+opacity: 0;
+}
+}
+
+/_ 各スライドのアニメーションタイミングを均等にずらす _/
+.slideimg:nth-of-type(1) {
+background-image: url("../assets/img/fuji.jpg");
+animation-delay: 0s;
+}
+
+.slideimg:nth-of-type(2) {
+background-image: url("../assets/img/maiko.jpg");
+animation-delay: 5s;
+}
+
+.slideimg:nth-of-type(3) {
+background-image: url("../assets/img/torii.jpg");
+animation-delay: 10s;
+}
+
+.slideimg:nth-of-type(4) {
+background-image: url("../assets/img/fukei.jpg");
+animation-delay: 15s;
+}
+
+.slideimg:nth-of-type(5) {
+background-image: url("../assets/img/akari.jpg");
+animation-delay: 20s;
+}

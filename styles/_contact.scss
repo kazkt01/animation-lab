@@ -4,11 +4,39 @@
   width: 100%;
 }
 
-.container {
+.c-container {
+  width: 1005;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin: 0 10%;
+}
+
+.c-ul-txt {
+  list-style: none;
 }
 
 form {
   width: 400px;
+  margin-left: 40px;
+}
+
+.c-txt-box {
+  padding: 0;
+}
+
+.c-txt-li {
+  list-style: none;
+  line-height: 50px;
+}
+
+.c-input {
+  width: 400px;
+  background: #fff;
+
+  border: none;
+}
+
+.c-dd {
+  margin: 0;
 }

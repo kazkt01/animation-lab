@@ -4,13 +4,14 @@
 @use "./txtanimation" as *;
 @use "./contact" as *;
 @use "./footer" as *;
-@use "./main" as *;
+@use "./about" as *;
 @use "./slide" as *;
 
 // common
 
 .l-inner-wrppaer {
   margin: 0 140px;
+  overflow: hidden;
 }
 
 section {

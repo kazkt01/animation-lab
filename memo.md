@@ -34,6 +34,7 @@ ex:
 https://www.next10chairs.com/
 
 10、メインビジュアルがふわっと切り替わる系
+https://turicco.com/css-slider/
 https://aqua-programdiary.com/javascript-3/
 
 11、画像が重なっていて強調されている感じ
