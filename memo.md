@@ -41,9 +41,24 @@ https://georgeweblog.com/200512css-layout/
 
 <!-- 番外編 -->
 
-12、クッキーを実装するには？
+12、カーソルポインターみたいなのを実装するには？
+https://wemo.tech/3229
+↓ こっちの方がわかりやすいかも
+https://web-den.com/change-cursor
+
+13、クリックで画像拡大は？
+
+14、クッキーを実装するには？
+css:
+https://fuuno.net/web02/click_zoom/click_zoom.html
+jQuery:
+https://renkosaka.com/modal-window-image/
 https://zenn.dev/suguru_3u/articles/baab0e978a146f
 https://itblogger-note.blogspot.com/2021/06/cookie-consent-popup.html
+
+<!--複数サイトを見た結果  -->
+
+１、横スクロールの左と右と両方向から流れているのがいい感じ
 
 memo
 CSS だけで画像切り替え
@@ -85,3 +100,6 @@ https://qiita.com/manabuyasuda/items/dbb76ed36970bec95470
 リクルート
 
 お問い合わせ
+
+CANVA
+https://www.canva.com/

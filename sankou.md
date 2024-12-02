@@ -36,3 +36,15 @@ https://www.ystudio.co.kr/?ckattempt=2
 
 ４、シンプルでわかりやすくていいね
 https://corp.menu.jp/
+
+５、これもいい感じ
+https://rejouice.com/
+
+6、縦ロゴ面白い　画像が切り替わる系
+https://betchu-kagu.co.jp/
+
+７、これも綺麗　テキストスクロールと商品画像を重ねてるのいい感じ。　写真のスクロール交差してるのもいい
+https://green-spoon.jp/
+
+８、かわいい
+https://www.andhuman.co/
