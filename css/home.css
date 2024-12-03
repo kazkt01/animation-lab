@@ -146,6 +146,13 @@
        object-fit: cover;
   }
 }
+.section-title-contact {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
 .contact {
   background: #000;
   color: white;
@@ -335,7 +342,7 @@ footer {
   overflow: hidden;
   width: 100%;
   white-space: nowrap;
-  margin: 100px 0;
+  margin: 100px 0 0 0;
 }
 
 .side-scroll ul {
