@@ -13,3 +13,41 @@ font-sizeをここで統一した方がいいかも
   }
 
 */
+
+html {
+  scroll-behavior: smooth; //スクロールをゆる焼にする
+}
+
+.l-wrapper {
+  overflow: hidden;
+}
+
+.l-inner-wrppaer {
+  margin: 0 10%;
+  overflow: hidden;
+}
+
+section {
+  background: #ffff;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  padding-top: 50px;
+  margin-top: 0;
+}
+
+// レスポンシブ対応
+
+// タブレット
+@media screen and (max-width: 768px) {
+  .l-inner-wrppaer {
+    margin: 0 10px;
+    overflow: hidden;
+  }
+}
+
+// スマホ L
+@media screen and (max-width: 425px) {
+}

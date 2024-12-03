@@ -1,7 +1,6 @@
 @charset "UTF-8";
 @use "../styles/header" as *;
 @use "../styles/keyVisual" as *;
-@use "../styles/txtanimation" as *;
 @use "../styles/contact" as *;
 @use "../styles/footer" as *;
 @use "../styles/about" as *;
@@ -9,55 +8,3 @@
 @use "../styles/sp_menu" as *;
 @use "../styles/service" as *;
 @use "../styles/common" as *;
-
-// common
-
-html {
-  scroll-behavior: smooth; //スクロールをゆる焼にする
-}
-
-.l-wrapper {
-  overflow: hidden;
-}
-
-.l-inner-wrppaer {
-  margin: 0 10%;
-  overflow: hidden;
-}
-
-section {
-  background: #ffff;
-}
-
-.section-title {
-  text-align: center;
-  margin-bottom: 50px;
-  padding-top: 50px;
-  margin-top: 0;
-}
-
-// .bg-video {
-//   position: fixed;
-//   right: 0;
-//   bottom: 0;
-//   min-width: 200px;
-//   min-height: 100%;
-//   width: auto;
-//   height: auto;
-//   z-index: -100;
-//   background-size: contain; // ←これがbgにできてる
-// }
-
-// レスポンシブ対応
-
-// タブレット
-@media screen and (max-width: 768px) {
-  .l-inner-wrppaer {
-    margin: 0 10px;
-    overflow: hidden;
-  }
-}
-
-// スマホ L
-@media screen and (max-width: 425px) {
-}

@@ -8,11 +8,11 @@
   left: 0;
   width: 100%;
   z-index: 100;
-  background: #fff;
 }
 
 .h-title {
   margin-left: 106px;
+  margin: 22px 0 22px 50px;
 }
 
 .h-ul {
@@ -46,7 +46,13 @@
     display: none;
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 375px) {
+  .h-title {
+    margin: 0 0 0 20px;
+  }
+  .h-img {
+    width: 100px;
+  }
   .h-nav {
     display: none;
   }
@@ -55,8 +61,8 @@
 .slider-container {
   position: relative;
   width: 100%;
-  height: 800px;
-  margin-top: 140px;
+  height: auto;
+  margin-top: 100px;
   overflow: hidden;
 }
 
@@ -73,13 +79,21 @@
      object-fit: contain;
 }
 
-@keyframes slideAnime {
-  0%, 30%, 100% {
-    opacity: 0;
-  } /* スライドの非表示タイミング */
-  10%, 20% {
-    opacity: 1;
-  } /* スライドの表示タイミング */
+@media screen and (max-width: 425px) {
+  .slider-container {
+    width: 425px;
+    height: 300px;
+    margin-top: 140px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .slider-container {
+    width: 100%;
+    height: 300px;
+    margin-top: 140px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 /* 各スライドのアニメーションタイミングを均等にずらす */
 .slideimg:nth-of-type(1) {
@@ -124,14 +138,13 @@
   background-position: 10%;
 }
 
-@media screen and (max-width: 425px) {
-  .slider-container {
-    width: 100%;
-    height: 400px;
-    margin-top: 140px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
+@keyframes slideAnime {
+  0%, 30%, 100% {
+    opacity: 0;
+  } /* スライドの非表示タイミング */
+  10%, 20% {
+    opacity: 1;
+  } /* スライドの表示タイミング */
 }
 #contact {
   background: #000;
@@ -202,7 +215,6 @@
 
 @media screen and (max-width: 768px) {
   .c-container {
-    width: 100%;
     display: block;
   }
   .c-inner-box_A {
@@ -287,11 +299,6 @@ footer {
   .a-p {
     font-size: 10px;
     margin: 0 0 50px 0;
-  }
-}
-@media screen and (max-width: 425px) {
-  .h-nav {
-    display: none;
   }
 }
 .side-scroll {

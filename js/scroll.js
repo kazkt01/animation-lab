@@ -3,11 +3,11 @@ ScrollReveal({
   distance: "60px",
 });
 
-ScrollReveal().reveal("#mainvisual", {
+ScrollReveal().reveal("#key-visual", {
   origin: "bottom",
   duration: 1000,
-  delay: 200,
   reset: false,
+  delay: 300,
 });
 
 //  About

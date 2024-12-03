@@ -116,3 +116,15 @@ https://qiita.com/manabuyasuda/items/dbb76ed36970bec95470
 
 CANVA
 https://www.canva.com/
+
+// .bg-video {
+// position: fixed;
+// right: 0;
+// bottom: 0;
+// min-width: 200px;
+// min-height: 100%;
+// width: auto;
+// height: auto;
+// z-index: -100;
+// background-size: contain; // ← これが bg にできてる
+// }

@@ -7,11 +7,12 @@
   left: 0;
   width: 100%;
   z-index: 100;
-  background: #fff;
+  // background: #fff;
 }
 
 .h-title {
   margin-left: 106px;
+  margin: 22px 0 22px 50px;
 }
 
 .h-ul {
@@ -34,12 +35,7 @@
   }
 }
 
-// レスポンシブ対応
-// 2560pxでスライドが見切れてしまっている。
-// 1024pxでaboutのテキストが見切れている。、surviceの部分も狭そう　supportもデカすぎる　contact 狭すぎ
-//
-
-// タブレット
+// タブレット 〜768px
 @media screen and (max-width: 768px) {
   .h-title {
     margin-left: 20px;
@@ -53,8 +49,15 @@
   }
 }
 
-// スマホ L
-@media screen and (max-width: 425px) {
+// スマホM  〜375px
+@media screen and (max-width: 375px) {
+  .h-title {
+    margin: 0 0 0 20px;
+  }
+  .h-img {
+    width: 100px;
+  }
+
   .h-nav {
     display: none;
   }
