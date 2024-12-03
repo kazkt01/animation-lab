@@ -35,28 +35,31 @@
     margin-top: 0;
     text-align: center;
   }
-
   .a-box-right {
     display: block;
     margin-top: 0;
+    text-align: center;
   }
 
   //画像を小さくする
   .a-img {
-    width: 280px;
-    height: 200px;
+    // width: 280px;
+    // height: 200px;
+    width: 240px;
+    height: 160px;
     object-fit: cover;
     border-radius: 20px;
+    margin-top: 20px;
   }
 
   .a-title {
     font-size: 20px;
-    margin: 5px 0;
+    margin: 10px 0 0 0;
   }
 
   .a-p {
-    margin-top: 0;
-    font-size: 14px;
+    font-size: 10px;
+    margin: 0 0 50px 0;
   }
 }
 

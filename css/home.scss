@@ -1,13 +1,14 @@
 @charset "UTF-8";
 @use "../styles/header" as *;
-@use "../styles/mainvisual" as *;
+@use "../styles/keyVisual" as *;
 @use "../styles/txtanimation" as *;
 @use "../styles/contact" as *;
 @use "../styles/footer" as *;
 @use "../styles/about" as *;
-@use "../styles/slide" as *;
+@use "../styles/sideScroll" as *;
 @use "../styles/sp_menu" as *;
 @use "../styles/service" as *;
+@use "../styles/common" as *;
 
 // common
 
@@ -16,6 +17,11 @@ html {
 }
 
 .l-wrapper {
+  overflow: hidden;
+}
+
+.l-inner-wrppaer {
+  margin: 0 10%;
   overflow: hidden;
 }
 
