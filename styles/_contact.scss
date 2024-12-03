@@ -70,7 +70,6 @@
 @media screen and (max-width: 768px) {
   .c-container {
     width: 100%;
-    margin: 0 auto;
     display: block;
   }
   .c-inner-box_A {
@@ -78,14 +77,14 @@
   }
 
   .c-input {
-    width: 200px;
+    width: 260px;
     height: 20px;
     background: #fff;
   }
 
   .c-text-area {
     margin: 0 0 10px 0;
-    width: 200px;
+    width: 260px;
     height: 90px;
   }
 }

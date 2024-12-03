@@ -203,20 +203,19 @@
 @media screen and (max-width: 768px) {
   .c-container {
     width: 100%;
-    margin: 0 auto;
     display: block;
   }
   .c-inner-box_A {
     margin: 0;
   }
   .c-input {
-    width: 200px;
+    width: 260px;
     height: 20px;
     background: #fff;
   }
   .c-text-area {
     margin: 0 0 10px 0;
-    width: 200px;
+    width: 260px;
     height: 90px;
   }
 }
@@ -512,6 +511,21 @@ footer {
     text-align: center;
   }
 }
+/*
+
+font-sizeをここで統一した方がいいかも
+
+ .a-title {
+    font-size: 20px;
+    margin: 10px 0 0 0;
+  }
+
+  .a-p {
+    font-size: 10px;
+    margin: 0 0 50px 0;
+  }
+
+*/
 html {
   scroll-behavior: smooth;
 }
