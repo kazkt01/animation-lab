@@ -1,8 +1,8 @@
-#contact {
+.contact {
   background: #000;
   color: white;
   width: 100%;
-  height: 600px;
+  height: 650px;
 }
 
 .c-container {
@@ -11,8 +11,8 @@
   margin: 0 15%;
 }
 
-.c-inner-box_A {
-  margin-left: 150px;
+.c-inner-box {
+  margin: 0 auto;
 }
 
 .c-ul-txt {
@@ -30,32 +30,36 @@
 }
 
 .c-input {
-  width: 400px;
-  height: 20px;
+  width: 500px;
+  height: 30px;
   background: #fff;
   border: none;
-  border-radius: 2px;
+  border-radius: 5px;
   margin: 0 0 10px 0;
 }
 
 .c-text-area {
-  margin: 0 0 10px 0;
-  border-radius: 2px;
-  width: 400px;
-  height: 90px;
+  width: 500px;
+  height: 200px;
   background: #fff;
   border: none;
+  border-radius: 5px;
+  margin: 0 0 10px 0;
 }
 
 .c-dd {
   margin: 0;
 }
 
+.c-btn-box {
+  text-align: center;
+}
+
 .c-btn {
   background: #000;
   border: 1px solid #fff;
   color: #fff;
-  border-radius: 2px;
+  border-radius: 5px;
   padding: 10px 50px;
   transition: all 1s;
 
@@ -70,7 +74,18 @@
 @media screen and (max-width: 768px) {
   .c-container {
     display: block;
+    text-align: center;
   }
+
+  .c-dt {
+    text-align: left;
+    width: 90px;
+  }
+
+  .c-dd {
+    width: 260px;
+  }
+
   .c-inner-box_A {
     margin: 0;
   }
