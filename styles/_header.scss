@@ -12,7 +12,7 @@
 
 .h-title {
   margin-left: 106px;
-  margin: 32px 0 22px 50px;
+  margin: 22px 0 22px 50px;
 }
 
 .h-ul {
@@ -37,6 +37,10 @@
 
 // タブレット 〜768px
 @media screen and (max-width: 768px) {
+  #header {
+    padding-top: 20px;
+  }
+
   .h-title {
     margin-left: 20px;
   }
@@ -51,6 +55,9 @@
 
 // スマホM  〜375px
 @media screen and (max-width: 375px) {
+  #header {
+    padding-top: 20px;
+  }
   .h-title {
     margin: 0 0 0 20px;
   }
