@@ -69,36 +69,23 @@
 // タブレット
 @media screen and (max-width: 768px) {
   .c-container {
+    width: 100%;
+    margin: 0 auto;
     display: block;
-    margin: 0 15%;
   }
   .c-inner-box_A {
-    display: none;
+    margin: 0;
   }
 
   .c-input {
     width: 200px;
     height: 20px;
     background: #fff;
-    border: none;
-    border-radius: 2px;
-    margin: 0 0 10px 0;
   }
 
   .c-text-area {
     margin: 0 0 10px 0;
-    border-radius: 2px;
     width: 200px;
     height: 90px;
-    background: #fff;
-    border: none;
   }
-
-  .c-dd {
-    margin: 0;
-  }
-}
-
-// スマホ L
-@media screen and (max-width: 425px) {
 }

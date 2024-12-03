@@ -8,6 +8,7 @@
   left: 0;
   width: 100%;
   z-index: 100;
+  background: #fff;
 }
 
 .h-title {
@@ -39,7 +40,7 @@
     margin-left: 20px;
   }
   .h-img {
-    width: 100px;
+    width: 120px;
   }
   .h-nav {
     display: none;
@@ -68,6 +69,8 @@
   opacity: 0;
   background-size: cover; /* 画像をスライド全体にカバー */
   animation: slideAnime 25s infinite; /* 15秒で1サイクル */
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 @keyframes slideAnime {
@@ -121,6 +124,15 @@
   background-position: 10%;
 }
 
+@media screen and (max-width: 425px) {
+  .slider-container {
+    width: 100%;
+    height: 400px;
+    margin-top: 140px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 .bbs {
   align-items: center;
   display: flex;
@@ -225,30 +237,22 @@
 
 @media screen and (max-width: 768px) {
   .c-container {
+    width: 100%;
+    margin: 0 auto;
     display: block;
-    margin: 0 15%;
   }
   .c-inner-box_A {
-    display: none;
+    margin: 0;
   }
   .c-input {
     width: 200px;
     height: 20px;
     background: #fff;
-    border: none;
-    border-radius: 2px;
-    margin: 0 0 10px 0;
   }
   .c-text-area {
     margin: 0 0 10px 0;
-    border-radius: 2px;
     width: 200px;
     height: 90px;
-    background: #fff;
-    border: none;
-  }
-  .c-dd {
-    margin: 0;
   }
 }
 footer {
@@ -294,6 +298,15 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+  .a-box-left {
+    display: block;
+    margin-top: 0;
+    text-align: center;
+  }
+  .a-box-right {
+    display: block;
+    margin-top: 0;
+  }
   .a-img {
     width: 280px;
     height: 200px;
@@ -350,40 +363,133 @@ footer {
     transform: translateX(-100%);
   }
 }
-html {
-  scroll-behavior: smooth;
+@media only screen and (min-width: 768px) {
+  .l-sp-menu-btn {
+    display: none;
+  }
 }
 
-.l-wrapper {
-  overflow: hidden;
-}
-
-.l-inner-wrppaer {
-  margin: 0 10%;
-  overflow: hidden;
-}
-
-section {
-  background: white;
-}
-
-.section-title {
-  text-align: center;
-  margin-bottom: 50px;
-  padding-top: 50px;
-  margin-top: 0;
-}
-
-.bg-video {
+.p-sp-menu-btn {
   position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 200px;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  background-size: contain;
+  width: 20px;
+  height: 16px;
+  right: 22px;
+  top: 13px;
+  z-index: 35;
+}
+
+.p-sp-menu-btn__border {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #ffffff;
+}
+.p-sp-menu-btn__border--01 {
+  top: 0;
+}
+.p-sp-menu-btn__border--02 {
+  top: 8px;
+}
+.p-sp-menu-btn__border--03 {
+  top: 16px;
+}
+
+.l-sp-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  height: 100vh;
+  width: 100%;
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.3s ease transform, 0.3s ease opacity;
+}
+
+@media only screen and (min-width: 768px) {
+  .l-sp-menu {
+    display: none;
+  }
+}
+.l-sp-menu.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.p-sp-menu {
+  height: 100%;
+  background: #848484;
+  overflow-y: auto;
+}
+
+.p-sp-menu__list {
+  text-align: center;
+  list-style: none;
+  padding: 100px 0;
+  height: 100px;
+}
+
+.p-sp-menu__item {
+  padding: 10px;
+}
+
+.p-sp-menu__link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+}
+.p-sp-menu__link:hover {
+  color: red;
+}
+
+@media only screen and (min-width: 768px) {
+  .l-sp-menu-btn {
+    display: none;
+  }
+}
+
+.p-sp-menu-btn {
+  position: fixed;
+  width: 20px;
+  height: 18px;
+  right: 2em;
+  top: 2em;
+  z-index: 12;
+  display: block;
+}
+
+.p-sp-menu-btn__border {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #333;
+  transition: all 0.5s;
+}
+
+.p-sp-menu-btn__border--01 {
+  top: 0;
+}
+
+.p-sp-menu-btn__border--02 {
+  top: 8px;
+}
+
+.p-sp-menu-btn__border--03 {
+  top: 16px;
+}
+
+.is-active .p-sp-menu-btn__border--02 {
+  opacity: 0;
+}
+
+.is-active .p-sp-menu-btn__border--01 {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.is-active .p-sp-menu-btn__border--03 {
+  transform: translateY(-6px) rotate(-45deg);
 }
 
 .s-box {
@@ -396,6 +502,30 @@ section {
   margin: 20px;
   height: 178px;
   overflow: hidden;
+}
+
+.l-inner-wrppaer {
+  margin: 0 10%;
+  overflow: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.l-wrapper {
+  overflow: hidden;
+}
+
+section {
+  background: white;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  padding-top: 50px;
+  margin-top: 0;
 }
 
 @media screen and (max-width: 768px) {

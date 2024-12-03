@@ -1,0 +1,19 @@
+.s-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.s-img {
+  margin: 20px;
+  height: 178px;
+  overflow: hidden;
+}
+
+.l-inner-wrppaer {
+  margin: 0 10%;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 425px) {
+}

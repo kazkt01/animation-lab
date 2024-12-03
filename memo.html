@@ -6,6 +6,42 @@
     <title>Document</title>
   </head>
   <body>
+    <!--  -->
+
+    <!-- btn -->
+    <div class="l-sp-menu-btn" id="sp_menu_btn">
+      <div class="p-sp-menu-btn">
+        <span class="p-sp-menu-btn__border p-sp-menu-btn__border--01"></span>
+        <span class="p-sp-menu-btn__border p-sp-menu-btn__border--02"></span>
+        <span class="p-sp-menu-btn__border p-sp-menu-btn__border--03"></span>
+      </div>
+    </div>
+
+    <!-- 　　　SP-menu
+    ////////////////////////////////////// -->
+    <div class="l-sp-menu" id="sp_menu">
+      <div class="p-sp-menu">
+        <ul class="p-sp-menu__list">
+          <li class="p-sp-menu__item">
+            <a href="#about" class="p-sp-menu__link">About</a>
+          </li>
+          <li class="p-sp-menu__item">
+            <a href="#web" class="p-sp-menu__link">Web</a>
+          </li>
+          <li class="p-sp-menu__item">
+            <a href="#app" class="p-sp-menu__link">App</a>
+          </li>
+          <li class="p-sp-menu__item">
+            <a href="#design" class="p-sp-menu__link">Design</a>
+          </li>
+          <li class="p-sp-menu__item">
+            <a href="#contact" class="p-sp-menu__link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- l-sp-menu -->
+
     <!-- memo
     ////////////////////////-->
 
@@ -21,5 +57,40 @@
         <div class="image src2"></div>
         <div class="image src3"></div>
       </div> -->
+
+    <script src="./js/jquery.js"></script>
+    <!-- <script src="./js/hamburger.js"></script> -->
+    <script>
+      // toggleを使わなかった場合
+      $(document).ready(function () {
+        // .menu-btnをクリックした時
+        $("#sp_menu_btn").on("click", function () {
+          if (!$(this).hasClass("is-active")) {
+            $(this).addClass("is-active");
+            $(document.documentElement).addClass("is-fixed");
+            $("#sp_menu").addClass("is-active");
+          } else {
+            $(this).removeClass("is-active");
+            $(document.documentElement).removeClass("is-fixed");
+            $("#sp_menu").removeClass("is-active");
+          }
+        });
+        // .menu-btnをクリックした時
+        $(".p-sp-menu__link").on("click", function () {
+          $("#sp_menu_btn").removeClass("is-active");
+          $(document.documentElement).removeClass("is-fixed");
+          $("#sp_menu").removeClass("is-active");
+        });
+
+        // スムーススクロール
+        $('a[href^="#"]').on("click", function () {
+          let speed = 500;
+          let href = $(this).attr("href");
+          let target = $(href == "#" || href == "" ? "html" : href);
+          let headerHeight = $("#header").height();
+          let position = target.offset().top - headerHeight;
+        });
+      });
+    </script>
   </body>
 </html>

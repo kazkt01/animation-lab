@@ -32,7 +32,8 @@ https://rprojectjapan.com/
 <!-- 課題   -->
 
 １、レスポンシブ対応
-contct のデザインをシンプルにするのあり　 ← 消したりつけたりするのが複雑になりがち
+contct のデザインをシンプルにするのあり　
+⇧ 消したりつけたりするのが複雑になりがち
 
 // 修正案
 @keyframes slideAnime {
