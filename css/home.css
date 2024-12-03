@@ -292,6 +292,22 @@ footer {
   margin-top: 0;
 }
 
+@media screen and (max-width: 1024px) {
+  .a-img {
+    width: 260px;
+    height: 180px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .a-title {
+    font-size: 30px;
+    margin: 0;
+  }
+  .a-p {
+    font-size: 16px;
+    margin: 0 0 50px 0;
+  }
+}
 @media screen and (max-width: 768px) {
   .a-box-left {
     display: block;
@@ -312,27 +328,31 @@ footer {
     margin-top: 20px;
   }
   .a-title {
+    font-size: 22px;
+    margin: 10px 0 0 0;
+  }
+  .a-p {
+    font-size: 14px;
+    margin: 0 0 50px 0;
+  }
+}
+@media screen and (max-width: 425px) {
+  .a-title {
     font-size: 20px;
     margin: 10px 0 0 0;
   }
   .a-p {
-    font-size: 10px;
+    font-size: 12px;
     margin: 0 0 50px 0;
   }
 }
-@media screen and (max-width: 1024px) {
-  .a-img {
-    width: 260px;
-    height: 180px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
+@media screen and (max-width: 375px) {
   .a-title {
-    font-size: 22px;
-    margin: 0;
+    font-size: 18px;
+    margin: 10px 0 0 0;
   }
   .a-p {
-    font-size: 12px;
+    font-size: 10px;
     margin: 0 0 50px 0;
   }
 }
@@ -555,17 +575,33 @@ footer {
 }
 /*
 
-font-sizeをここで統一した方がいいかも
+4K (~2560px)
+p ←18px
+h2 ←32px
+h3 ←26px
 
- .a-title {
-    font-size: 20px;
-    margin: 10px 0 0 0;
-  }
 
-  .a-p {
-    font-size: 10px;
-    margin: 0 0 50px 0;
-  }
+ノーパソ　(~1440)
+p ←16px
+h2 ←30px
+h3 ←24px
+
+
+タブレット (~768)
+p ←14px
+h2 ←28px
+h3 ←22px
+
+
+モバイル（~425px）
+p ←12px
+h2 ←24px
+h3 ←20px
+
+モバイル（~375px）
+p ←10px
+h2 ←22px
+h3 ←18px
 
 */
 html {
@@ -596,5 +632,81 @@ section {
   .l-inner-wrppaer {
     margin: 0 10px;
     overflow: hidden;
+  }
+  .section-title {
+    padding-top: 100px;
+    padding-bottom: 40px;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 425px) {
+  .l-inner-wrppaer {
+    margin: 0 10px;
+    overflow: hidden;
+  }
+  .section-title {
+    padding-top: 100px;
+    padding-bottom: 40px;
+    margin: 0;
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .l-inner-wrppaer {
+    margin: 0 10px;
+    overflow: hidden;
+  }
+  .section-title {
+    padding-top: 100px;
+    padding-bottom: 40px;
+    margin: 0;
+    font-size: 22px;
+  }
+}
+.n-inner-wrapper {
+  margin: 0 10%;
+}
+
+.n-dt {
+  font-size: 16px;
+  padding-top: 20px;
+  padding-bottom: 4px;
+}
+
+.n-dd {
+  font-size: 16px;
+  margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .n-dt {
+    font-size: 16px;
+  }
+  .n-dd {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .n-dt {
+    font-size: 14px;
+  }
+  .n-dd {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .n-dt {
+    font-size: 12px;
+  }
+  .n-dd {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .n-dt {
+    font-size: 10px;
+  }
+  .n-dd {
+    font-size: 10px;
   }
 }/*# sourceMappingURL=home.css.map */

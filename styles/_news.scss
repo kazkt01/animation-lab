@@ -1,0 +1,50 @@
+.n-inner-wrapper {
+  margin: 0 10%;
+}
+
+.n-dt {
+  font-size: 16px;
+  padding-top: 20px;
+  padding-bottom: 4px;
+}
+.n-dd {
+  font-size: 16px;
+
+  margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .n-dt {
+    font-size: 16px;
+  }
+  .n-dd {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .n-dt {
+    font-size: 14px;
+  }
+  .n-dd {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .n-dt {
+    font-size: 12px;
+  }
+  .n-dd {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .n-dt {
+    font-size: 10px;
+  }
+  .n-dd {
+    font-size: 10px;
+  }
+}
