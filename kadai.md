@@ -29,6 +29,11 @@ https://81-web.com/sites/38151
 ４、humberger 　 sp-menu いい感じ みやすさもベスト
 https://rprojectjapan.com/
 
+<!-- 課題   -->
+
+１、レスポンシブ対応
+contct のデザインをシンプルにするのあり　 ← 消したりつけたりするのが複雑になりがち
+
 // 修正案
 @keyframes slideAnime {
 0% {

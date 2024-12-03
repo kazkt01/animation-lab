@@ -61,6 +61,10 @@ section {
 
 // タブレット
 @media screen and (max-width: 768px) {
+  .l-inner-wrppaer {
+    margin: 0 10px;
+    overflow: hidden;
+  }
 }
 
 // スマホ L

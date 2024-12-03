@@ -28,3 +28,30 @@
 .a-p {
   margin-top: 0;
 }
+
+@media screen and (max-width: 768px) {
+  //画像を小さくする
+  .a-img {
+    width: 280px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  .a-title {
+    font-size: 20px;
+    margin: 5px 0;
+  }
+
+  .a-p {
+    margin-top: 0;
+    font-size: 14px;
+  }
+}
+
+// スマホ L
+@media screen and (max-width: 425px) {
+  .h-nav {
+    display: none;
+  }
+}

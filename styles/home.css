@@ -8,10 +8,9 @@
   left: 0;
   width: 100%;
   z-index: 100;
-  background: #fff;
 }
 
-.site-logo {
+.h-title {
   margin-left: 106px;
 }
 
@@ -36,6 +35,17 @@
 }
 
 @media screen and (max-width: 768px) {
+  .h-title {
+    margin-left: 20px;
+  }
+  .h-img {
+    width: 100px;
+  }
+  .h-nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 425px) {
   .h-nav {
     display: none;
   }
@@ -45,7 +55,7 @@
   position: relative;
   width: 100%;
   height: 800px;
-  margin-top: 100px;
+  margin-top: 140px;
   overflow: hidden;
 }
 
@@ -213,6 +223,34 @@
   border: 1px solid #333;
 }
 
+@media screen and (max-width: 768px) {
+  .c-container {
+    display: block;
+    margin: 0 15%;
+  }
+  .c-inner-box_A {
+    display: none;
+  }
+  .c-input {
+    width: 200px;
+    height: 20px;
+    background: #fff;
+    border: none;
+    border-radius: 2px;
+    margin: 0 0 10px 0;
+  }
+  .c-text-area {
+    margin: 0 0 10px 0;
+    border-radius: 2px;
+    width: 200px;
+    height: 90px;
+    background: #fff;
+    border: none;
+  }
+  .c-dd {
+    margin: 0;
+  }
+}
 footer {
   display: flex;
   align-items: center;
@@ -255,6 +293,28 @@ footer {
   margin-top: 0;
 }
 
+@media screen and (max-width: 768px) {
+  .a-img {
+    width: 280px;
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 20px;
+  }
+  .a-title {
+    font-size: 20px;
+    margin: 5px 0;
+  }
+  .a-p {
+    margin-top: 0;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .h-nav {
+    display: none;
+  }
+}
 .slide {
   align-items: center;
   display: flex;
@@ -336,4 +396,11 @@ section {
   margin: 20px;
   height: 178px;
   overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .l-inner-wrppaer {
+    margin: 0 10px;
+    overflow: hidden;
+  }
 }/*# sourceMappingURL=home.css.map */
