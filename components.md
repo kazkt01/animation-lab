@@ -13,6 +13,7 @@ https://design-library.jp/ui/
 あのぬるぬる切り替わるメニューは、タブメニューというらしい。
 react でタグメニュー
 https://zenn.dev/happou31/articles/b7db16e9b0b120
+https://inari-tech.net/components/animation-tab
 
 next.js でタグメニュー
 https://zenn.dev/koichi_51/articles/fc8f2e6225959c
