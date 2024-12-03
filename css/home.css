@@ -51,7 +51,7 @@
     margin: 0 0 0 20px;
   }
   .h-img {
-    width: 120px;
+    width: 130px;
   }
   .h-nav {
     display: none;
@@ -782,11 +782,10 @@ section {
   position: relative;
   display: block;
   border-radius: 2px;
-  width: 40px;
+  width: 48px;
   z-index: 180;
-  position: fixed;
-  top: 30px;
-  right: 20px;
+  margin-right: 30px;
+  margin-top: 4px;
 }
 
 .menu_btn span {
@@ -881,7 +880,8 @@ section {
   border-bottom: none;
 }
 
-body {
-  margin: 0;
-  padding: 0;
+@media screen and (min-width: 769px) {
+  .menu_btn {
+    display: none;
+  }
 }/*# sourceMappingURL=home.css.map */

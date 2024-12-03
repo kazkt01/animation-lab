@@ -4,11 +4,13 @@
   position: relative;
   display: block;
   border-radius: 2px;
-  width: 40px;
+  width: 48px;
   z-index: 180;
-  position: fixed;
-  top: 30px;
-  right: 20px;
+  margin-right: 30px;
+  margin-top: 4px;
+  //   position: fixed;
+  //   top: 30px;
+  //   right: 20px;
 }
 .menu_btn span {
   position: relative;
@@ -99,7 +101,10 @@
 .header_nav ul li a:hover {
   border-bottom: none;
 }
-body {
-  margin: 0;
-  padding: 0;
+
+// タブレット (~768)
+@media screen and (min-width: 769px) {
+  .menu_btn {
+    display: none;
+  }
 }
