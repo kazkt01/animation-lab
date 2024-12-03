@@ -10,9 +10,16 @@
   overflow: hidden;
 }
 
+// タブレット (~768)
+@media screen and (max-width: 768px) {
+}
+// モバイル（~425px）
 @media screen and (max-width: 425px) {
   .s-box {
     display: block;
     text-align: center;
   }
+}
+//モバイル（~375px）
+@media screen and (max-width: 375px) {
 }
