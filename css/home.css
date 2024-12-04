@@ -7,7 +7,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .h-title {
@@ -639,6 +639,19 @@ h3 ←18px
 @media screen and (max-width: 375px) {
 }
 
+z-index
+
+header 100
+
+hambuerger btn 170
+
+hambuerger menu 1000
+
+loading 10000
+
+
+
+
 
 
 
@@ -789,7 +802,6 @@ section {
   display: block;
   border-radius: 2px;
   width: 48px;
-  z-index: 180;
   margin-right: 30px;
   margin-top: 4px;
 }
@@ -798,7 +810,6 @@ section {
   position: relative;
   display: block;
   height: 32px;
-  z-index: 170;
 }
 
 .menu_btn:before,
@@ -838,56 +849,63 @@ section {
 }
 
 /* ヘッダーのスタイル */
-.header {
-  height: 50px;
-  padding: 0 10px;
-  position: relative;
+.sp-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 170;
 }
 
 /* ナビゲーションメニューの初期状態 */
-.header_nav {
+.sp-menu_nav {
   width: 100%;
+  height: 100%;
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 0;
   transition: all 0.5s;
-  transform: translateY(-100%); /* 初期状態では上方向に移動させて隠しておく */
+  transform: translateY(-1000px); /* 初期状態では上方向に移動させて隠しておく */
 }
 
 /* ナビゲーションメニューを開いた状態 */
-.header_nav.open {
-  transform: translateY(50px); /* ヘッダーの高さ分下方向に移動する */
+.sp-menu_nav.open {
+  transform: translateY(0px); /* ヘッダーの高さ分下方向に移動する */
 }
 
 /* その他のスタイル */
-.header_nav ul {
+.sp-menu_ul {
   margin: 0;
   padding: 0;
   display: block;
 }
 
-.header_nav ul li {
+.sp-menu_li {
   margin: 0;
-  border-bottom: 1px dotted black;
-  background-color: #fff1bf;
+  background-color: #fff;
   list-style: none;
 }
 
-.header_nav ul li a {
+.sp-menu_link {
   display: block;
-  padding: 10px 0;
+  padding: 100px 0;
   text-align: center;
+  color: #333;
+  text-decoration: none;
 }
 
-.header_nav ul li a:hover {
+.sp-menu_link :hover {
   border-bottom: none;
 }
 
 @media screen and (min-width: 769px) {
   .menu_btn {
+    display: none;
+  }
+  .sp-menu {
     display: none;
   }
 }/*# sourceMappingURL=home.css.map */
