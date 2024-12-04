@@ -5,7 +5,7 @@
 }
 
 .s-img {
-  margin: 20px;
+  margin: 0px;
   width: auto;
   height: 178px;
   overflow: hidden;
@@ -21,12 +21,22 @@
 @media screen and (max-width: 768px) {
   .s-box {
     display: block;
+    margin: 0px 10%;
+    padding: 0px 10px;
     text-align: center;
   }
+
+  .s-inner-box {
+    padding: 30px 0 0 0;
+  }
+
   .s-img {
-    margin: 20px;
     width: auto;
     height: 150px;
+
+    &--03 {
+      width: 158px;
+    }
   }
   .s-title {
     font-size: 22px;
@@ -40,11 +50,6 @@
   .s-box {
     display: block;
     text-align: center;
-  }
-
-  .s-h3 {
-  }
-  .s-p {
   }
 }
 //モバイル（~375px）
