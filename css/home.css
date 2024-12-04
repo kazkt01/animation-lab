@@ -310,8 +310,8 @@ footer {
 
 @media screen and (max-width: 1024px) {
   .a-img {
-    width: 260px;
-    height: 180px;
+    width: 290px;
+    height: 210px;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -469,13 +469,13 @@ footer {
 .s-inner-box {
   margin: 0 10px;
   max-width: 240px;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {
   .s-box {
     display: block;
-    margin: 0px 10%;
-    padding: 0px 10px;
+    margin: 0px 30%;
     text-align: center;
   }
   .s-inner-box {
@@ -499,6 +499,12 @@ footer {
   .s-box {
     display: block;
     text-align: center;
+  }
+}
+@media screen and (max-width: 375px) {
+  .s-box {
+    display: block;
+    margin: 0px 15%;
   }
 }
 /*

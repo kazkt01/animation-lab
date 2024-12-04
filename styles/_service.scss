@@ -15,14 +15,14 @@
 .s-inner-box {
   margin: 0 10px;
   max-width: 240px;
+  overflow: hidden;
 }
 
 // タブレット (~768)
 @media screen and (max-width: 768px) {
   .s-box {
     display: block;
-    margin: 0px 10%;
-    padding: 0px 10px;
+    margin: 0px 30%;
     text-align: center;
   }
 
@@ -54,4 +54,8 @@
 }
 //モバイル（~375px）
 @media screen and (max-width: 375px) {
+  .s-box {
+    display: block;
+    margin: 0px 15%;
+  }
 }
