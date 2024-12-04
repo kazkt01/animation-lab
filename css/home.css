@@ -115,13 +115,13 @@
 .slideimg:nth-of-type(4) {
   background-image: url("../assets/img/fukei.jpg");
   animation-delay: 21s;
-  background-position: 0%;
+  background-position: 60%;
 }
 
 .slideimg:nth-of-type(5) {
   background-image: url("../assets/img/fukei2.jpg");
   animation-delay: 28s;
-  background-position: 10%;
+  background-position: 90%;
 }
 
 @media screen and (max-width: 425px) {
