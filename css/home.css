@@ -455,6 +455,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 60px 20%;
 }
 
 .s-img {
@@ -468,7 +469,7 @@ footer {
 
 .s-inner-box {
   margin: 0 10px;
-  max-width: 240px;
+  max-width: 300px;
   overflow: hidden;
 }
 
@@ -480,6 +481,7 @@ footer {
   }
   .s-inner-box {
     padding: 30px 0 0 0;
+    max-width: 240px;
   }
   .s-img {
     width: auto;
