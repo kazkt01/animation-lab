@@ -789,4 +789,37 @@ section {
   .sp-menu_li {
     padding-top: 70px;
   }
+}
+/* 読込中画面のスタイル */
+/* 幅・高さを画面一杯、位置を固定して画面を覆う */
+#loading {
+  width: 100vw;
+  height: 100vh;
+  background-color: #bbb;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+/* 読込中のぐるぐる表示 */
+#loading::before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  margin: 10px auto;
+  border: 4px #ddd solid;
+  border-top: 4px #2e93e6 solid;
+  border-radius: 50%;
+  animation: sp-anime 1s infinite linear;
+}
+
+@keyframes sp-anime {
+  100% {
+    transform: rotate(360deg);
+  }
 }/*# sourceMappingURL=home.css.map */
