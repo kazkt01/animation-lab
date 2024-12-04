@@ -451,135 +451,6 @@ footer {
     width: 200px;
   }
 }
-@media only screen and (min-width: 768px) {
-  .l-sp-menu-btn {
-    display: none;
-  }
-}
-
-.p-sp-menu-btn {
-  position: fixed;
-  width: 20px;
-  height: 16px;
-  right: 22px;
-  top: 13px;
-  z-index: 35;
-}
-
-.p-sp-menu-btn__border {
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 2px;
-  background: #ffffff;
-}
-.p-sp-menu-btn__border--01 {
-  top: 0;
-}
-.p-sp-menu-btn__border--02 {
-  top: 8px;
-}
-.p-sp-menu-btn__border--03 {
-  top: 16px;
-}
-
-.l-sp-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  height: 100vh;
-  width: 100%;
-  pointer-events: none;
-  opacity: 0;
-  transition: 0.3s ease transform, 0.3s ease opacity;
-}
-
-@media only screen and (min-width: 768px) {
-  .l-sp-menu {
-    display: none;
-  }
-}
-.l-sp-menu.is-active {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.p-sp-menu {
-  height: 100%;
-  background: #848484;
-  overflow-y: auto;
-}
-
-.p-sp-menu__list {
-  text-align: center;
-  list-style: none;
-  padding: 100px 0;
-  height: 100px;
-}
-
-.p-sp-menu__item {
-  padding: 10px;
-}
-
-.p-sp-menu__link {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 20px;
-}
-.p-sp-menu__link:hover {
-  color: red;
-}
-
-@media only screen and (min-width: 768px) {
-  .l-sp-menu-btn {
-    display: none;
-  }
-}
-
-.p-sp-menu-btn {
-  position: fixed;
-  width: 20px;
-  height: 18px;
-  right: 2em;
-  top: 2em;
-  z-index: 12;
-  display: block;
-}
-
-.p-sp-menu-btn__border {
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 2px;
-  background: #333;
-  transition: all 0.5s;
-}
-
-.p-sp-menu-btn__border--01 {
-  top: 0;
-}
-
-.p-sp-menu-btn__border--02 {
-  top: 8px;
-}
-
-.p-sp-menu-btn__border--03 {
-  top: 16px;
-}
-
-.is-active .p-sp-menu-btn__border--02 {
-  opacity: 0;
-}
-
-.is-active .p-sp-menu-btn__border--01 {
-  transform: translateY(10px) rotate(45deg);
-}
-
-.is-active .p-sp-menu-btn__border--03 {
-  transform: translateY(-6px) rotate(-45deg);
-}
-
 .s-box {
   display: flex;
   justify-content: space-between;
@@ -588,10 +459,35 @@ footer {
 
 .s-img {
   margin: 20px;
+  width: auto;
   height: 178px;
   overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
+.s-inner-box {
+  margin: 0 10px;
+  max-width: 240px;
+}
+
+@media screen and (max-width: 768px) {
+  .s-box {
+    display: block;
+    text-align: center;
+  }
+  .s-img {
+    margin: 20px;
+    width: auto;
+    height: 150px;
+  }
+  .s-title {
+    font-size: 22px;
+  }
+  .s-p {
+    font-size: 14px;
+  }
+}
 @media screen and (max-width: 425px) {
   .s-box {
     display: block;
@@ -762,39 +658,6 @@ section {
     font-size: 10px;
   }
 }
-/* 読込中画面のスタイル */
-/* 幅・高さを画面一杯、位置を固定して画面を覆う */
-#loading {
-  width: 100vw;
-  height: 100vh;
-  background-color: #bbb;
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 10000;
-}
-
-/* 読込中のぐるぐる表示 */
-#loading::before {
-  content: "";
-  width: 32px;
-  height: 32px;
-  margin: 10px auto;
-  border: 4px #ddd solid;
-  border-top: 4px #2e93e6 solid;
-  border-radius: 50%;
-  animation: sp-anime 1s infinite linear;
-}
-
-@keyframes sp-anime {
-  100% {
-    transform: rotate(360deg);
-  }
-}
 /*  ハンバーガーメニューのスタイル  */
 .menu_btn {
   cursor: pointer;
@@ -848,8 +711,10 @@ section {
   transform: translateY(0) rotate(-45deg);
 }
 
-/* ヘッダーのスタイル */
+/* SP-Menu */
 .sp-menu {
+  width: 100%;
+  height: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -879,19 +744,20 @@ section {
 /* その他のスタイル */
 .sp-menu_ul {
   margin: 0;
-  padding: 0;
+  padding: 180px;
   display: block;
+  background-color: #fff;
+  height: 100%;
 }
 
 .sp-menu_li {
   margin: 0;
-  background-color: #fff;
+  padding-top: 60px;
   list-style: none;
 }
 
 .sp-menu_link {
   display: block;
-  padding: 100px 0;
   text-align: center;
   color: #333;
   text-decoration: none;
@@ -907,5 +773,13 @@ section {
   }
   .sp-menu {
     display: none;
+  }
+}
+@media screen and (max-width: 425px) {
+  .sp-menu_ul {
+    padding: 100px;
+  }
+  .sp-menu_li {
+    padding-top: 70px;
   }
 }/*# sourceMappingURL=home.css.map */

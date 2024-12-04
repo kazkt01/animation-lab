@@ -6,18 +6,45 @@
 
 .s-img {
   margin: 20px;
+  width: auto;
   height: 178px;
   overflow: hidden;
+  object-fit: cover;
+}
+
+.s-inner-box {
+  margin: 0 10px;
+  max-width: 240px;
 }
 
 // タブレット (~768)
 @media screen and (max-width: 768px) {
+  .s-box {
+    display: block;
+    text-align: center;
+  }
+  .s-img {
+    margin: 20px;
+    width: auto;
+    height: 150px;
+  }
+  .s-title {
+    font-size: 22px;
+  }
+  .s-p {
+    font-size: 14px;
+  }
 }
 // モバイル（~425px）
 @media screen and (max-width: 425px) {
   .s-box {
     display: block;
     text-align: center;
+  }
+
+  .s-h3 {
+  }
+  .s-p {
   }
 }
 //モバイル（~375px）

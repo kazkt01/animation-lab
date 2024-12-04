@@ -37,26 +37,14 @@ $(function () {
     $(this).toggleClass("open");
     $(".sp-menu_nav").toggleClass("open");
   });
-
   // メニュー内リンクをクリックしたらopenクラスを外す
   $(".sp-menu_link").click(function () {
     $(".menu_btn").removeClass("open");
     $(".sp-menu_nav").removeClass("open");
   });
+  // メニュー内リンクをクリックしたらopenクラスを外す
+  $(".h-img").click(function () {
+    $(".menu_btn").removeClass("open");
+    $(".sp-menu_nav").removeClass("open");
+  });
 });
-
-// $(function () {
-//   // ハンバーガーメニューボタンにクリックイベントを設定
-//   $(".menu_btn").on("click", function () {
-//     // ボタンとナビゲーションメニューにopenクラスをトグル
-//     $(this).toggleClass("open");
-//     $(".sp-menu_nav").toggleClass("open");
-//   });
-
-//   // ナビゲーションリンクをクリックしたときの処理
-//   $(".sp-menu_link").on("click", function () {
-//     // ハンバーガーメニューを閉じる
-//     $(".menu_btn").removeClass("open");
-//     $(".sp-menu_nav").removeClass("open");
-//   });
-// });
