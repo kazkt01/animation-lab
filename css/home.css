@@ -80,7 +80,7 @@
   left: 0;
   opacity: 0;
   background-size: cover; /* 画像をスライド全体にカバー */
-  animation: slideAnime 15s infinite; /* 15秒で1サイクル */
+  animation: slideAnime 26s infinite; /* 15秒で1サイクル */
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -102,25 +102,25 @@
 
 .slideimg:nth-of-type(2) {
   background-image: url("../assets/img/maiko.jpg");
-  animation-delay: 3s;
+  animation-delay: 7s;
   background-position: 10%;
 }
 
 .slideimg:nth-of-type(3) {
   background-image: url("../assets/img/torii.jpg");
-  animation-delay: 6s;
+  animation-delay: 14s;
   background-position: 0%;
 }
 
 .slideimg:nth-of-type(4) {
   background-image: url("../assets/img/fukei.jpg");
-  animation-delay: 9s;
+  animation-delay: 21s;
   background-position: 0%;
 }
 
 .slideimg:nth-of-type(5) {
   background-image: url("../assets/img/fukei2.jpg");
-  animation-delay: 3s;
+  animation-delay: 28s;
   background-position: 10%;
 }
 
