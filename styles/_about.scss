@@ -29,6 +29,9 @@
   margin-top: 0;
 }
 
+//1024px ←元々の設定
+//1142px から画面崩れ
+
 // レスポンシブ
 @media screen and (max-width: 1024px) {
   //画像を小さくする
